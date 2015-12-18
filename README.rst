@@ -4,7 +4,8 @@ genutils: general utilities for Python development.
 
 .. image:: https://travis-ci.org/stbraun/genutils.svg?branch=master
 
-.. image:: https://readthedocs.org/projects/genutils/badge/?version=master
+.. image:: https://readthedocs.org/projects/genutils/badge/?version=latest
+
 
 Just some easily reusable general stuff.
 
