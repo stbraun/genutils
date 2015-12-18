@@ -49,7 +49,7 @@ setup(name="genutils",
       keywords="development tools",  # Separate with spaces
       author="Stefan Braun",
       author_email="sb@action.ms",
-      url="https://github.com/stbraun/toolbox",
+      url="https://github.com/stbraun/genutils",
       license="MIT",
       packages=find_packages(exclude=['test']),
       include_package_data=True,
