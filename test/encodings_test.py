@@ -22,44 +22,44 @@ Tasts for encodings.
 
 import unittest
 
-import genutils.strings.encodings as enc
+from genutils.strings import to_bytes, to_str
 
 
 class EncodingsTest(unittest.TestCase):
     def test_to_str_bytes(self):
         val = bytes('äüß', encoding='utf-8')
         self.assertIsInstance(val, bytes)
-        res = enc.to_str(val)
+        res = to_str(val)
         self.assertIsInstance(res, str)
 
     def test_to_str_bytes_latin(self):
         val = bytes('äüß', encoding='latin-1')
         self.assertIsInstance(val, bytes)
-        res = enc.to_str(val, encoding='latin-1')
+        res = to_str(val, encoding='latin-1')
         self.assertIsInstance(res, str)
 
     def test_to_str_str(self):
         val = 'öüä'
         self.assertIsInstance(val, str)
-        res = enc.to_str(val)
+        res = to_str(val)
         self.assertIsInstance(res, str)
 
     def test_to_bytes_bytes(self):
         val = bytes('äüß', encoding='utf-8')
         self.assertIsInstance(val, bytes)
-        res = enc.to_bytes(val)
+        res = to_bytes(val)
         self.assertIsInstance(res, bytes)
 
     def test_to_bytes_bytes_latin(self):
         val = bytes('äüß', encoding='latin-1')
         self.assertIsInstance(val, bytes)
-        res = enc.to_bytes(val)
+        res = to_bytes(val)
         self.assertIsInstance(res, bytes)
 
     def test_to_bytes_str(self):
         val = 'äüö'
         self.assertIsInstance(val, str)
-        res = enc.to_bytes(val)
+        res = to_bytes(val)
         self.assertIsInstance(res, bytes)
         valb = bytes('äüö', encoding='utf-8')
         self.assertEqual(valb, res)
@@ -67,7 +67,7 @@ class EncodingsTest(unittest.TestCase):
     def test_to_bytes_str_latin(self):
         val = 'äüö'
         self.assertIsInstance(val, str)
-        res = enc.to_bytes(val, encoding='latin-1')
+        res = to_bytes(val, encoding='latin-1')
         self.assertIsInstance(res, bytes)
         valb = bytes('äüö', encoding='latin-1')
         self.assertEqual(valb, res)

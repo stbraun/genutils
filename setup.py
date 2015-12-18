@@ -1,5 +1,5 @@
 """
-toolbox: General utilities.
+genutils: General utilities.
 
 Copyright 2015, Stefan Braun.
 Licensed under MIT.
@@ -26,7 +26,7 @@ class PyTest(TestCommand):
         sys.exit(pytest.main(self.test_args))
 
 
-version = '0.1.1'
+version = '0.1.2'
 
 setup(name="genutils",
       version=version,
@@ -60,5 +60,5 @@ setup(name="genutils",
       # List of packages that this one depends upon:
       install_requires=['setuptools'],
       requires=[],
-      provides=['toolbox'],
+      provides=['genutils'],
       )
