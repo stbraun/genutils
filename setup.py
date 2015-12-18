@@ -26,7 +26,7 @@ class PyTest(TestCommand):
         sys.exit(pytest.main(self.test_args))
 
 
-version = '0.1.0'
+version = '0.1.1'
 
 setup(name="genutils",
       version=version,
@@ -54,7 +54,7 @@ setup(name="genutils",
       packages=find_packages(exclude=['test']),
       include_package_data=True,
       zip_safe=False,
-      tests_require=['nose'],
+      tests_require=['pytest', 'nose'],
       cmdclass={'test': PyTest},
 
       # List of packages that this one depends upon:
