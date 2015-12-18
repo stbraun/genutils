@@ -22,7 +22,7 @@ Tasts for encodings.
 
 import unittest
 
-import toolbox.strings.encodings as enc
+import genutils.strings.encodings as enc
 
 
 class EncodingsTest(unittest.TestCase):
