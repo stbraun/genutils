@@ -3,7 +3,7 @@ Release Notes
 =============
 
 
-**Release 0.1.2**
+**Release 0.1.3a1**
 
 * Set up Documentation.
 * Package structure simplified.
