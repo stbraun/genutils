@@ -22,6 +22,7 @@ Some functions helping with string encoding and decoding.
 
 def to_str(str_or_bytes, encoding='utf-8'):
     """Take argument and return as unicode string.
+
     :param str_or_bytes: argument to decode.
     :type str_or_bytes: str or bytes
     :param encoding: the encoding to use if argument is of type bytes
@@ -37,6 +38,7 @@ def to_str(str_or_bytes, encoding='utf-8'):
 
 def to_bytes(str_or_bytes, encoding='utf-8)'):
     """Take argument and return as bytes.
+
     :param str_or_bytes: argument to encode.
     :type str_or_bytes: str or bytes
     :param encoding: the encoding to use if argument is of type str
