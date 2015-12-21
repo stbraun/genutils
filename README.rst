@@ -9,6 +9,8 @@ genutils: general utilities for Python development.
 
 Just some easily reusable general stuff.
 
+Please find the documentation at http://genutils.readthedocs.org/en/latest/.
+
 
 Installation
 ------------

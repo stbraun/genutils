@@ -26,7 +26,7 @@ class PyTest(TestCommand):
         sys.exit(pytest.main(self.test_args))
 
 
-version = '0.1.3a1'
+version = '0.1.3'
 
 setup(name="genutils",
       version=version,
