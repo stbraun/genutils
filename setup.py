@@ -31,7 +31,9 @@ version = '0.2.0a1'
 setup(name="genutils",
       version=version,
       description="General utilities.",
-      # long_description=open("README.rst").read(),
+      long_description=open("README.rst").read(),
+      # 1 - Planning, 2 - Pre-Alpha, 3 - Alpha,
+      # 4 - Beta, 5 - Production/Stable, 6 - Mature, 7 - Inactive
       classifiers=[  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
           'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',
