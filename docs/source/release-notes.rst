@@ -3,6 +3,13 @@ Release Notes
 =============
 
 
+**Release 0.2.0a1**
+
+* New module ``numbers``.
+* ``numbers.is_odd()``
+* ``numbers.is_even()``
+
+
 **Release 0.1.3**
 
 * Set up Documentation.

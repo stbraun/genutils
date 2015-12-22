@@ -1,5 +1,6 @@
 # coding=utf-8
 """
+Some utilities related to numbers.
 """
 # Copyright (c) 2015 Stefan Braun
 #
@@ -19,4 +20,29 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+def is_even(num):
+    """Is num even?
 
+    :param num: number to check.
+    :type num: int
+    :returns: True if num is even.
+    :rtype: boolean
+    :raises: ``TypeError`` if num is not an int.
+    """
+    if not isinstance(num, int):
+        raise TypeError("{} is not an int".format(num))
+    return num % 2 == 0
+
+
+def is_odd(num):
+    """Is num odd?
+
+    :param num: number to check.
+    :type num: int
+    :returns: True if num is odd.
+    :rtype: boolean
+    :raises: ``TypeError`` if num is not an int.
+    """
+    if not isinstance(num, int):
+        raise TypeError("{} is not an int".format(num))
+    return num % 2 == 1

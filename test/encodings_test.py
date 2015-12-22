@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-Tasts for encodings.
+Tests for encodings.
 """
 # Copyright (c) 2015 Stefan Braun
 #
