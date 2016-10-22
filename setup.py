@@ -44,7 +44,6 @@ setup(name="genutils",
           'Programming Language :: Python :: 3.5',
           'Programming Language :: Python :: 3 :: Only',
           'Programming Language :: Python :: Implementation :: CPython',
-          'Programming Language :: Python :: Implementation :: PyPy',
           'Topic :: Software Development :: Libraries :: Python Modules',
           'Topic :: Software Development :: Testing'
       ],
