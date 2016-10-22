@@ -26,7 +26,7 @@ class PyTest(TestCommand):
         sys.exit(pytest.main(self.test_args))
 
 
-version = '0.2.0a2'
+version = '0.3.0'
 
 setup(name="genutils",
       version=version,
@@ -35,7 +35,7 @@ setup(name="genutils",
       # 1 - Planning, 2 - Pre-Alpha, 3 - Alpha,
       # 4 - Beta, 5 - Production/Stable, 6 - Mature, 7 - Inactive
       classifiers=[  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
-          'Development Status :: 4 - Beta',
+          'Development Status :: 5 - Production/Stable',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: MIT License',
           'Programming Language :: Python',
@@ -56,7 +56,7 @@ setup(name="genutils",
       packages=find_packages(exclude=['test']),
       include_package_data=True,
       zip_safe=False,
-      tests_require=['pytest', 'nose'],
+      tests_require=['pytest', 'nose', 'hypothesis'],
       cmdclass={'test': PyTest},
 
       # List of packages that this one depends upon:

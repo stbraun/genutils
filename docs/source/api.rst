@@ -9,8 +9,8 @@ genutils.strings
    :members:
 
 
-genutils.numbers
-----------------
+genutils.tbnumbers
+------------------
 
-.. automodule:: genutils.numbers
+.. automodule:: genutils.tbnumbers
    :members:

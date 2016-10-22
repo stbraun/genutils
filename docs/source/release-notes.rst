@@ -3,6 +3,12 @@ Release Notes
 =============
 
 
+**Release 0.3.0
+
+* module ``numbers`` renamed to ``tbnumbers``
+* property based tests added
+
+
 **Release 0.2.0a1**
 
 * New module ``numbers``.
